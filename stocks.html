@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INST377: Stocks</title>
+        <script defer src="stocks.js"></script>
+        <link rel="stylesheet" type="text/css" href="assignment2.css">
+
+    </head>
+    <body>
+        <h1> INST377 - Activities </h1>
+        <div id="nav_area">
+            <ul>
+                <a href="homepage.html"><li>Home</li></a>
+                <a href="stocks.html"><li>Stocks</li></a>
+                <a href="dogs.html"><li>Dogs</li></a>
+            </ul>
+        </div>
+        <form id="stocksapi" method="get"><br>
+            <input type="text"> <br>
+            <select id="dropdown">
+                <option value="30day">30 days</option>
+                <option value="60day">60 days</option>
+                <option value="90day">90 days</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit" onclick="stocks() return false">Lookup!</button>
+        </form>
+        <br>
+        <!--Stock Chart -->
+        <div>
+            <canvas id="chart"></canvas>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script> 
+
+
+        </script>
+    </body>
+</html>
