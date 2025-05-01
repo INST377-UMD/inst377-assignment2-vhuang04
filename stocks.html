@@ -24,10 +24,23 @@
             </select>
             <br>
             <br>
-            <button type="submit" onclick="stocks() return false">Lookup!</button>
+            <button type="submit" onclick="stocks()">Lookup!</button>
         </form>
+
+
+        <div id="stock-table-section">
+            <table id="stock-table">
+                <tr>
+                    <th>Ticker</th>
+                    <th>Comment Count</th>
+                    <th>Sentiment</th>
+                </tr>
+            </table>
+
+        </div>
+    
         <br>
-        <!--Stock Chart -->
+    <!--Stock Chart -->
         <div>
             <canvas id="chart"></canvas>
         </div>
