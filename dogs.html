@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INST377: Assignment 2 </title>
+        <script defer src="jsaudio.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assignment2.css">
+        <script defer src="dogs.js"></script>
+
+    </head>
+    <body>
+        <h1>INST377 - Doggos </h1>
+        <div id="nav_area">
+            <ul>
+                <a href="homepage.html"><li>Home</li></a>
+                <a href="stocks.html"><li>Stocks</li></a>
+                <a href="dogs.html"><li>Dogs</li></a>
+            </ul>
+        </div>
+        <h2> Doggos!</h2>
+        <!-- Slideshow -->
+        <div id="slideshow_container">
+            <!-- images -->
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+      <br> 
+        <!-- Dots for the slide-->
+        <div id= "dot-section"style="text-align: center;">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+
+        <div id="dogbreedbtn">
+
+            
+        </div>
+        <div id="dog-facts">
+            <div id="name-breed">
+
+            </div>
+
+            <div id="descr">
+
+            </div>
+
+            <div id="max">
+
+            </div>
+            
+            <div id="min">
+
+            </div>
+        </div>
+        <div id="nav_voice">
+            <h3> In this web page there are options to Navigate using Audio!</h3>
+            <p>Ensure your Mic is enabled to be able to use this feature</p>
+            <ul>
+                <li>Navigate to a Different Page
+                    <ul>
+                        <li>Say: <b>Navigate to < page ></b>  </li>
+                    </ul>
+                </li>
+                    
+                <li> Change the Page Color</li>
+                    <ul>
+                        <li>Say: <b>Change the color to < color > </color></b>  </li>
+                    </ul>
+                <li>Say Hello Back to you!</li>
+                    <ul>
+                        <li>Say: <b>Hello</b>  </li>
+                    </ul>
+                <li> Search Breed</li>
+                    <ul>
+                        <li> Say: <b>Search < breed > </b></li>
+                    </ul>
+            </ul>
+            <form id="buttons">
+                <button class="button-10" id="onbtn" role="button" onclick="on();return false">Turn On Listening</button>
+                <button class="button-10" id="offbtn" role="button" onclick="off(); return false">Turn Off Listening</button>
+            </form>
+    </body>
+</html>
