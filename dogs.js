@@ -1,6 +1,7 @@
 //random dog pic 
 function randomdog(){
     for(let i = 0; i < 8; i++){
+      let index = 1;
         fetch(`https://dog.ceo/api/breeds/image/random`)
         .then((result)=> result.json())
         .then((resultjson) => {
@@ -16,6 +17,8 @@ function randomdog(){
             }
 
             container.appendChild(slide)
+
+
             if (i === 8) {
               showSlides(slideIndex);
             }
@@ -23,7 +26,7 @@ function randomdog(){
         })
     }
 }
-
+let slideIndex = 1
 randomdog();
 
 

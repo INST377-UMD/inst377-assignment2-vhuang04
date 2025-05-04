@@ -29,7 +29,8 @@
 
       <br> 
         <!-- Dots for the slide-->
-        <div style="text-align: center;">
+        <div id= "dot-section"style="text-align: center;">
+            <span class="dot" onclick="currentSlide(0)"></span>
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -37,7 +38,6 @@
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
             <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
         </div>
 
         <div id="dogbreedbtn">
@@ -61,5 +61,28 @@
 
             </div>
         </div>
+        <div id="nav_voice">
+            <h3> In this web page there are options to Navigate using Audio!</h3>
+            <p>Ensure your Mic is enabled to be able to use this feature</p>
+            <ul>
+                <li>Navigate to a Different Page
+                    <ul>
+                        <li>Say: <b>Navigate to < page ></b>  </li>
+                    </ul>
+                </li>
+                    
+                <li> Change the Page Color</li>
+                    <ul>
+                        <li>Say: <b>Change the color to < color > </color></b>  </li>
+                    </ul>
+                <li>Say Hello Back to you!</li>
+                    <ul>
+                        <li>Say: <b>Hello</b>  </li>
+                    </ul>
+            </ul>
+            <form id="buttons">
+                <button class="button-10" id="on" role="button" onclick="on()">Turn On Listening</button>
+                <button class="button-10" id="off" role="button" onclick="off()">Turn Off Listening</button>
+            </form>
     </body>
 </html>
