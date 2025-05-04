@@ -65,7 +65,6 @@ function showSlides(n) {
 
 /////////////////////////////////
 //api dogs 
-
 function dogsapi(){
   fetch(`https://dogapi.dog/api/v2/breeds`)
   .then((result)=> result.json())
@@ -73,9 +72,11 @@ function dogsapi(){
     console.log(resultjson)
 
     const btncontainer = document.getElementById("dogbreedbtn")
+    dogArray = resultjson.data 
     resultjson.data.forEach((breed) => {
       const btn = document.createElement("button")
       btn.className = "button-24"
+      btn.id = breed.attributes.name
       btn.type= "button"
       btn.textContent = breed.attributes.name
 

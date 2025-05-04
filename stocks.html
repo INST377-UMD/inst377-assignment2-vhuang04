@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>INST377: Stocks</title>
+        <script defer src="jsaudio.js"></script>
         <script defer src="stocks.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
         <link rel="stylesheet" type="text/css" href="assignment2.css">
 
     </head>
@@ -68,10 +70,14 @@
                 <ul>
                     <li>Say: <b>Hello</b>  </li>
                 </ul>
+            <li>Lookup Stocks</li>
+                <ul>
+                    <li> Say: <b>Lookup < stocks > </stocks></b></li>
+                </ul>
         </ul>
         <form id="buttons">
-            <button class="button-10" id="on" role="button" onclick="on()">Turn On Listening</button>
-            <button class="button-10" id="off" role="button" onclick="off()">Turn Off Listening</button>
+            <button class="button-10" id="onbtn" role="button" onclick="on();return false">Turn On Listening</button>
+            <button class="button-10" id="offbtn" role="button" onclick="off(); return false">Turn Off Listening</button>
         </form>
 
     </body>
